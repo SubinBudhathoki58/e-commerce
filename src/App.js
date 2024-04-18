@@ -12,7 +12,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Routes>
-        <Route exact path="/jerseylist" Component={JerseyList} />
+        <Route exact path="/" Component={JerseyList} />
         <Route exact path="/details" Component={Details} />
         <Route exact path="/cart" Component={Cart} />
         <Route exact path="/default" Component={Default} />
