@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
-import Title from './Title';
+import React, { Component } from "react";
+import Title from "./Title";
 // import Product from './Product'
+import { storeJerseys } from "../data";
 export default class ProductList extends Component {
   state = {
-    Products: [],
+    Products: storeJerseys,
   };
   render() {
+    console.log(this.state.Products);
     return (
       <React.Fragment>
         <div className="py-5">
@@ -15,8 +17,8 @@ export default class ProductList extends Component {
           </div>
         </div>
       </React.Fragment>
-        
-        // <Product/>
-    )
+
+      // <Product/>
+    );
   }
 }
