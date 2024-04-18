@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route exact path="/" Component={ProductList} />
+          <Route exact path="/productlist" Component={ProductList} />
           <Route exact path="/details" Component={Details} />
           <Route exact path="/cart" Component={Cart} />
           <Route exact path="/default" Component={Default} />

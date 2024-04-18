@@ -15,7 +15,7 @@ export default class Navbar extends Component {
           {" "}
           {/* Changed to mx-auto to center */}
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <Link to="/productlist" className="nav-link">
               Jerseys
             </Link>
           </li>
@@ -43,7 +43,7 @@ export default class Navbar extends Component {
       </Nav>
     );
   }
-}
+} 
 
 const Nav = styled.nav`
   background: var(--mainBlue);
