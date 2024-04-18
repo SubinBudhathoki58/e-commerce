@@ -4,7 +4,7 @@ export const storeJerseys = [
   {
     id: 1,
     title: "Psg-Neymar",
-    img: "img/Psg.png",
+    img: "img/jersey-1.png",
     price: 250,
     Club:"Paris Siant German",
     info:
@@ -16,7 +16,7 @@ export const storeJerseys = [
   {
     id: 2,
     title: "Arsenal",
-    img: "img/Arsenal.jpg",
+    img: "img/jersey-2.jpg",
     price: 160,
     Club: "Arsenal",
     info:
@@ -28,7 +28,7 @@ export const storeJerseys = [
   {
     id: 3,
     title: "Man City- Haland",
-    img: "img/Manchester_City.png",
+    img: "img/jersey-3.png",
     price: 220,
     Club: "Manchester City",
     info:
@@ -40,7 +40,7 @@ export const storeJerseys = [
   {
     id: 4,
     title: "Madrid-Vini jr.",
-    img: "img/Real Madrid.jpg",
+    img: "img/jersey-4.jpg",
     price: 220,
     Club: "Real Madrid",
     info:
@@ -52,7 +52,7 @@ export const storeJerseys = [
   {
     id: 5,
     title: "Spotify-Barcelona",
-    img: "img/Barcelona.png",
+    img: "img/jersey-5.jpg",
     price: 240,
     Club: "Barcelona",
     info:
@@ -64,7 +64,7 @@ export const storeJerseys = [
   {
     id: 6,
     title: "Vlahovic-Juventus",
-    img: "img/Juventus.png",
+    img: "img/jersey-6.png",
     price: 170,
     Club: "Juventus",
     info:
@@ -76,7 +76,7 @@ export const storeJerseys = [
   {
     id: 7,
     title: "Bayren Munchen",
-    img: "img/Bayern.png",
+    img: "img/jersey-7.png",
     price: 320,
     Club: "Bayern Munchen",
     info:
@@ -88,7 +88,7 @@ export const storeJerseys = [
   {
     id: 8,
     title: "Mls-Messi",
-    img: "img/Mls.png",
+    img: "img/jersey-8.png",
     price: 250,
     Club: "MLS",
     info:
@@ -102,7 +102,7 @@ export const storeJerseys = [
 export const detailJersey = {
   id: 1,
     title: "Psg-Neymar",
-    img: "img/Psg.png",
+    img: "img/jersey-1.png",
     price: 250,
     Club:"Paris Siant German",
     info:
