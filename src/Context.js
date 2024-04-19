@@ -7,15 +7,30 @@
 
     class JerseyProvider extends Component {
         state = {
-            jerseys: storeJerseys,
+            jerseys: [],
             detailJersey: detailJersey
         };
         handleDetail = (id) => {
             console.log("Hlo from details");
         }
-        addToCart = () => {
-            console.log("Hlo from  add to cart");
+        addToCart = (id) => {
+            console.log(`Hlo from  add to cart.id is $(id)`);
+        };
+        componentDidMount() {
+            this.setJerseys();
         }
+
+         setJerseys = () => {
+             let tempJerseys = [];
+             storeJerseys.forEach(item => {
+                 const singleItem = {...item};
+                 tempJerseys = [...tempJerseys, singleItem];
+
+             })
+             this.setState(()=>{
+                 return {jerseys: tempJerseys}
+             })
+         }
     render() {
         return (
         <JerseyContext.Provider value={{
