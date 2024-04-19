@@ -10,8 +10,16 @@
             jerseys: [],
             detailJersey: detailJersey
         };
+
+        getItem = (id) => {
+            const jersey = this.state.jerseys.find(item => item.id === id);
+            return jersey;
+        }
         handleDetail = (id) => {
-            console.log("Hlo from details");
+            const  jersey = this.getItem(id);
+            this.setState(()=>{
+                return {detailJersey: jersey}
+            })
         }
         addToCart = (id) => {
             console.log(`Hlo from  add to cart.id is $(id)`);
@@ -31,6 +39,7 @@
                  return {jerseys: tempJerseys}
              })
          }
+
     render() {
         return (
         <JerseyContext.Provider value={{
