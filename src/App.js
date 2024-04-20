@@ -7,6 +7,7 @@ import Cart from "./Components/Cart";
 import Default from "./Components/Default";
 import Details from "./Components/Details";
 import { Routes, Route } from "react-router-dom";
+import Modal from "./Components/Modal";
 function App() {
   return (
     <React.Fragment>
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/cart" Component={Cart} />
         <Route exact path="/default" Component={Default} />
       </Routes>
+      <Modal/>
     </React.Fragment>
   );
 }

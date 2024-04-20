@@ -9,7 +9,13 @@
         state = {
             jerseys: [],
             detailJersey: detailJersey,
-            cart: [],
+            cart: storeJerseys,
+            modalOpen: false,
+            modalJersey: detailJersey,
+            carSubtotal: 0,
+            carTax: 0,
+            carTotal: 0
+
         };
 
         getItem = (id) => {
@@ -54,12 +60,42 @@
              })
          }
 
+         openModal = (id) => {
+             const jersey = this.getItem(id);
+             this.setState(()=>{
+                 return {modalOpen: true, modalJersey: jersey}
+             })
+         }
+         closeModal = () => {
+             this.setState(()=>{
+                 return {modalOpen: false}
+             })
+         }
+         increment = (id) => {
+            
+         }
+         decrement = (id) => {
+             
+         }
+         removeItem = (id) => {
+         } 
+         clearCart = () => {
+             
+         }
+
+
     render() {
         return (
         <JerseyContext.Provider value={{
             ...this.state,
             handleDetail: this.handleDetail,
-            addToCart: this.addToCart
+            addToCart: this.addToCart,
+            openModal : this.openModal,
+            closeModal: this.closeModal,
+            increment: this.increment,
+            decrement: this.decrement,
+            removeItem: this.removeItem,
+            clearCart: this.clearCart
         }}>
             {this.props.children}       
         </JerseyContext.Provider>
