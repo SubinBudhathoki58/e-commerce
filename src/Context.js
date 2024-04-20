@@ -8,7 +8,8 @@
     class JerseyProvider extends Component {
         state = {
             jerseys: [],
-            detailJersey: detailJersey
+            detailJersey: detailJersey,
+            cart: [],
         };
 
         getItem = (id) => {
@@ -22,7 +23,20 @@
             })
         }
         addToCart = (id) => {
-            console.log(`Hlo from  add to cart.id is $(id)`);
+           let tempJerseys = [...this.state.jerseys];
+           const index = tempJerseys.indexOf(this.getItem(id));
+            const jersey = tempJerseys[index];
+            jersey.inCart = true;
+            jersey.count = 1;
+            const price = jersey.price;
+            jersey.total = price;
+            this.setState(()=>{
+                return {jerseys: tempJerseys, cart: [...this.state.cart, jersey]}
+            }, ()=>{
+                console.log(this.state);
+            })
+
+
         };
         componentDidMount() {
             this.setJerseys();
