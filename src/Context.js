@@ -69,7 +69,7 @@
          closeModal = () => {
              this.setState(()=>{
                  return {modalOpen: false}
-             })
+             }) 
          }
          increment = (id) => {
             
