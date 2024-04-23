@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/" Component={JerseyList} />
         <Route exact path="/details" Component={Details} />
         <Route exact path="/cart" Component={Cart} />
-        <Route exact path="/default" Component={Default} />
+        <Route component={Default}/>
       </Routes>
       <Modal/>
     </React.Fragment>

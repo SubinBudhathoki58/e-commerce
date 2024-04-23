@@ -4,7 +4,7 @@ export const storeJerseys = [
   {
     id: 1,
     title: "Psg-Neymar",
-    img: "img/jersey-11.jpg",
+    img: "img/jersey-1.png",
     price: 250,
     Club:"Paris Siant German",
     info:
@@ -102,7 +102,7 @@ export const storeJerseys = [
 export const detailJersey = {
   id: 1,
     title: "Psg-Neymar",
-    img: "img/jersey-11.jpg",
+    img: "img/jersey-1.png",
     price: 250,
     Club:"Paris Siant German",
     info:
